@@ -1,8 +1,8 @@
 # SleepyU CPU
 
-**Authors:** Yash Parmar & Brandon Gaona  
-**Course:** CS382 - Computer Architecture  
-**Date:** November 2025  
+**Authors:** Yash Parmar & Nikunj Patel  
+**Course:** Computer Architecture & Organization (CS382-B)
+**Date:** 11 December 2025  
 
 ## Overview
 SleepyU is a small 8-bit CPU designed for learning and experimenting with computer architecture concepts. Its core instructions are themed around sleep and dreams, making it both educational and fun. The CPU supports basic arithmetic and memory operations and can be extended for more advanced features.
