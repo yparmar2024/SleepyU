@@ -55,65 +55,150 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="clabelup" val="west"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(290,200)" name="Constant">
+    <comp lib="0" loc="(320,360)" name="Constant">
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(390,250)" name="Clock">
+    <comp lib="0" loc="(390,410)" name="Clock">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="PC_Clock"/>
     </comp>
-    <comp lib="0" loc="(400,230)" name="Constant"/>
-    <comp lib="3" loc="(350,210)" name="Adder"/>
-    <comp lib="4" loc="(420,180)" name="Register">
+    <comp lib="0" loc="(400,390)" name="Constant"/>
+    <comp lib="3" loc="(370,370)" name="Adder"/>
+    <comp lib="4" loc="(420,340)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="PC"/>
     </comp>
-    <comp lib="8" loc="(397,50)" name="Text">
+    <comp lib="8" loc="(425,220)" name="Text">
       <a name="text" val="Names: Yash Parmar &amp; Nikunj Patel"/>
     </comp>
-    <comp lib="8" loc="(558,74)" name="Text">
+    <comp lib="8" loc="(585,240)" name="Text">
       <a name="text" val="Pledge: I pledge my honor that I have abided by the Stevens Honor System."/>
     </comp>
-    <comp lib="8" loc="(770,523)" name="Text">
-      <a name="text" val="Implement Execution Stage"/>
+    <comp loc="(1680,360)" name="Write_Back"/>
+    <comp loc="(620,1320)" name="Execution">
+      <a name="facing" val="south"/>
     </comp>
-    <comp lib="8" loc="(778,731)" name="Text">
-      <a name="text" val="Implement Write Back Stage"/>
+    <comp loc="(620,1560)" name="Memory_Access">
+      <a name="facing" val="south"/>
     </comp>
-    <comp lib="8" loc="(797,618)" name="Text">
-      <a name="text" val="Implement Memory Access Stage"/>
+    <comp loc="(620,670)" name="Instruction_Fetching">
+      <a name="facing" val="south"/>
     </comp>
-    <comp lib="8" loc="(812,343)" name="Text">
-      <a name="text" val="Implement Instruction Fetching Stage"/>
+    <comp loc="(620,930)" name="Instruction_Decoding">
+      <a name="facing" val="south"/>
     </comp>
-    <comp lib="8" loc="(815,430)" name="Text">
-      <a name="text" val="Implement Instruction Decoding Stage"/>
-    </comp>
-    <comp loc="(420,320)" name="Instruction_Fetching"/>
-    <comp loc="(420,410)" name="Instruction_Decoding"/>
-    <comp loc="(420,500)" name="Execution"/>
-    <comp loc="(420,600)" name="Memory_Access"/>
-    <comp loc="(420,710)" name="Write_Back"/>
-    <wire from="(250,220)" to="(250,790)"/>
-    <wire from="(250,220)" to="(310,220)"/>
-    <wire from="(250,790)" to="(540,790)"/>
-    <wire from="(290,200)" to="(310,200)"/>
-    <wire from="(350,210)" to="(420,210)"/>
-    <wire from="(390,250)" to="(420,250)"/>
-    <wire from="(400,230)" to="(420,230)"/>
-    <wire from="(480,210)" to="(540,210)"/>
-    <wire from="(540,210)" to="(540,310)"/>
-    <wire from="(540,750)" to="(540,790)"/>
+    <comp loc="(900,940)" name="Register_File"/>
+    <wire from="(1900,370)" to="(1940,370)"/>
+    <wire from="(1940,370)" to="(1940,760)"/>
+    <wire from="(250,380)" to="(250,760)"/>
+    <wire from="(250,380)" to="(280,380)"/>
+    <wire from="(280,300)" to="(280,380)"/>
+    <wire from="(280,300)" to="(500,300)"/>
+    <wire from="(280,380)" to="(330,380)"/>
+    <wire from="(320,360)" to="(330,360)"/>
+    <wire from="(370,370)" to="(420,370)"/>
+    <wire from="(390,410)" to="(420,410)"/>
+    <wire from="(400,390)" to="(420,390)"/>
+    <wire from="(420,410)" to="(420,440)"/>
+    <wire from="(420,440)" to="(600,440)"/>
+    <wire from="(460,1080)" to="(480,1080)"/>
+    <wire from="(460,930)" to="(460,1080)"/>
+    <wire from="(480,1060)" to="(500,1060)"/>
+    <wire from="(480,1080)" to="(480,1100)"/>
+    <wire from="(480,370)" to="(500,370)"/>
+    <wire from="(480,930)" to="(480,1060)"/>
+    <wire from="(500,1040)" to="(520,1040)"/>
+    <wire from="(500,1060)" to="(500,1100)"/>
+    <wire from="(500,300)" to="(500,370)"/>
+    <wire from="(500,370)" to="(620,370)"/>
+    <wire from="(500,930)" to="(500,1040)"/>
+    <wire from="(520,1020)" to="(540,1020)"/>
+    <wire from="(520,1040)" to="(520,1100)"/>
+    <wire from="(520,930)" to="(520,1020)"/>
+    <wire from="(540,1000)" to="(680,1000)"/>
+    <wire from="(540,1020)" to="(540,1100)"/>
+    <wire from="(540,930)" to="(540,1000)"/>
+    <wire from="(560,930)" to="(560,980)"/>
+    <wire from="(560,980)" to="(560,1100)"/>
+    <wire from="(560,980)" to="(680,980)"/>
+    <wire from="(580,1060)" to="(580,1100)"/>
+    <wire from="(580,1060)" to="(910,1060)"/>
+    <wire from="(580,930)" to="(580,960)"/>
+    <wire from="(580,960)" to="(680,960)"/>
+    <wire from="(600,1080)" to="(600,1100)"/>
+    <wire from="(600,1080)" to="(930,1080)"/>
+    <wire from="(600,440)" to="(600,450)"/>
+    <wire from="(600,670)" to="(600,710)"/>
+    <wire from="(600,930)" to="(600,940)"/>
+    <wire from="(600,940)" to="(680,940)"/>
+    <wire from="(620,1320)" to="(620,1340)"/>
+    <wire from="(620,370)" to="(620,450)"/>
+    <wire from="(620,670)" to="(620,710)"/>
+    <wire from="(620,930)" to="(620,1100)"/>
+    <wire from="(900,940)" to="(930,940)"/>
+    <wire from="(900,960)" to="(910,960)"/>
+    <wire from="(910,960)" to="(910,1060)"/>
+    <wire from="(930,940)" to="(930,1080)"/>
   </circuit>
   <circuit name="Instruction_Fetching">
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="Instruction_Fetching"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="8" loc="(346,153)" name="Text">
+    <comp lib="0" loc="(360,320)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(360,340)" name="Constant"/>
+    <comp lib="0" loc="(440,290)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="PC"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(440,360)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="PC_Clock"/>
+    </comp>
+    <comp lib="0" loc="(540,250)" name="Constant">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(720,260)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="New_PC"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(720,380)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Opcode"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="3" loc="(600,260)" name="Adder"/>
+    <comp lib="4" loc="(460,290)" name="RAM">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="8" loc="(580,185)" name="Text">
       <a name="text" val="Instruction Fetching Stage"/>
     </comp>
+    <wire from="(360,320)" to="(370,320)"/>
+    <wire from="(360,340)" to="(450,340)"/>
+    <wire from="(370,320)" to="(370,330)"/>
+    <wire from="(370,330)" to="(460,330)"/>
+    <wire from="(440,290)" to="(460,290)"/>
+    <wire from="(440,360)" to="(460,360)"/>
+    <wire from="(450,340)" to="(450,350)"/>
+    <wire from="(450,350)" to="(460,350)"/>
+    <wire from="(460,270)" to="(460,290)"/>
+    <wire from="(460,270)" to="(560,270)"/>
+    <wire from="(460,290)" to="(460,300)"/>
+    <wire from="(460,330)" to="(460,340)"/>
+    <wire from="(540,250)" to="(560,250)"/>
+    <wire from="(600,260)" to="(720,260)"/>
+    <wire from="(700,380)" to="(720,380)"/>
   </circuit>
   <circuit name="Instruction_Decoding">
     <a name="appearance" val="logisim_evolution"/>
@@ -123,36 +208,341 @@
     <appear>
       <rect fill="none" height="10" stroke="#000000" width="220" x="232" y="94"/>
       <circ-anchor facing="east" x="50" y="50"/>
+      <circ-port dir="in" pin="200,300" x="50" y="80"/>
+      <circ-port dir="in" pin="200,620" x="50" y="70"/>
+      <circ-port dir="out" pin="730,300" x="50" y="170"/>
+      <circ-port dir="out" pin="790,340" x="50" y="140"/>
+      <circ-port dir="out" pin="790,380" x="50" y="150"/>
+      <circ-port dir="out" pin="790,420" x="50" y="160"/>
+      <circ-port dir="out" pin="790,470" x="50" y="90"/>
+      <circ-port dir="out" pin="790,520" x="50" y="130"/>
+      <circ-port dir="out" pin="790,560" x="50" y="100"/>
+      <circ-port dir="out" pin="790,600" x="50" y="110"/>
+      <circ-port dir="out" pin="790,640" x="50" y="120"/>
     </appear>
-    <comp lib="8" loc="(204,150)" name="Text">
+    <comp lib="0" loc="(200,300)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="New_PC_IF"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(200,620)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Opcode"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(280,620)" name="Splitter">
+      <a name="bit0" val="1"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="2"/>
+      <a name="bit5" val="2"/>
+      <a name="bit6" val="3"/>
+      <a name="bit7" val="3"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="8"/>
+      <a name="spacing" val="9"/>
+    </comp>
+    <comp lib="0" loc="(730,300)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="New_PC_ID"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(790,340)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Rs"/>
+      <a name="type" val="output"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(790,380)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Rt"/>
+      <a name="type" val="output"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(790,420)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Rd"/>
+      <a name="type" val="output"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(790,470)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="RegWrite"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(790,520)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ALUOp"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(790,560)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="MemRead"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(790,600)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="MemWrite"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(790,640)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="MemToReg"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="1" loc="(660,470)" name="OR Gate">
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="2" loc="(370,620)" name="Decoder">
+      <a name="enable" val="false"/>
+      <a name="select" val="2"/>
+      <a name="selloc" val="tr"/>
+    </comp>
+    <comp lib="8" loc="(245,345)" name="Text">
+      <a name="text" val="Rm/Rs"/>
+    </comp>
+    <comp lib="8" loc="(245,610)" name="Text">
+      <a name="text" val="Opcode"/>
+    </comp>
+    <comp lib="8" loc="(250,430)" name="Text">
+      <a name="text" val="Rn/Rt"/>
+    </comp>
+    <comp lib="8" loc="(265,525)" name="Text">
+      <a name="text" val="Rd"/>
+    </comp>
+    <comp lib="8" loc="(425,730)" name="Text">
+      <a name="text" val="Tuck"/>
+    </comp>
+    <comp lib="8" loc="(440,670)" name="Text">
+      <a name="text" val="Fall"/>
+    </comp>
+    <comp lib="8" loc="(440,700)" name="Text">
+      <a name="text" val="Fetch"/>
+    </comp>
+    <comp lib="8" loc="(450,260)" name="Text">
       <a name="text" val="Instruction Decoding Stage"/>
     </comp>
+    <comp lib="8" loc="(460,640)" name="Text">
+      <a name="text" val="Boost"/>
+    </comp>
+    <comp lib="8" loc="(675,410)" name="Text">
+      <a name="text" val="Destination Register (2-bit)"/>
+    </comp>
+    <comp lib="8" loc="(695,330)" name="Text">
+      <a name="text" val="Source Register (2-bit)"/>
+    </comp>
+    <comp lib="8" loc="(695,370)" name="Text">
+      <a name="text" val="Target Register (2-bit)"/>
+    </comp>
+    <comp lib="8" loc="(710,630)" name="Text">
+      <a name="text" val="MemToReg (1-bit)"/>
+    </comp>
+    <comp lib="8" loc="(715,550)" name="Text">
+      <a name="text" val="MemRead (1-bit)"/>
+    </comp>
+    <comp lib="8" loc="(720,590)" name="Text">
+      <a name="text" val="MemWrite (1-bit)"/>
+    </comp>
+    <comp lib="8" loc="(725,460)" name="Text">
+      <a name="text" val="RegWrite (1-bit)"/>
+    </comp>
+    <comp lib="8" loc="(730,510)" name="Text">
+      <a name="text" val="ALUOp (1-bit)"/>
+    </comp>
+    <wire from="(200,300)" to="(730,300)"/>
+    <wire from="(200,620)" to="(280,620)"/>
+    <wire from="(300,340)" to="(790,340)"/>
+    <wire from="(300,430)" to="(420,430)"/>
+    <wire from="(300,520)" to="(460,520)"/>
+    <wire from="(300,610)" to="(370,610)"/>
+    <wire from="(370,610)" to="(370,620)"/>
+    <wire from="(390,620)" to="(430,620)"/>
+    <wire from="(390,630)" to="(420,630)"/>
+    <wire from="(390,640)" to="(410,640)"/>
+    <wire from="(390,650)" to="(400,650)"/>
+    <wire from="(400,650)" to="(400,740)"/>
+    <wire from="(400,740)" to="(580,740)"/>
+    <wire from="(410,640)" to="(410,710)"/>
+    <wire from="(410,710)" to="(550,710)"/>
+    <wire from="(420,380)" to="(420,430)"/>
+    <wire from="(420,380)" to="(790,380)"/>
+    <wire from="(420,630)" to="(420,680)"/>
+    <wire from="(420,680)" to="(520,680)"/>
+    <wire from="(430,620)" to="(430,650)"/>
+    <wire from="(430,650)" to="(490,650)"/>
+    <wire from="(460,420)" to="(460,520)"/>
+    <wire from="(460,420)" to="(790,420)"/>
+    <wire from="(490,440)" to="(490,450)"/>
+    <wire from="(490,450)" to="(490,650)"/>
+    <wire from="(490,450)" to="(610,450)"/>
+    <wire from="(520,440)" to="(520,470)"/>
+    <wire from="(520,470)" to="(520,520)"/>
+    <wire from="(520,470)" to="(610,470)"/>
+    <wire from="(520,520)" to="(520,680)"/>
+    <wire from="(520,520)" to="(790,520)"/>
+    <wire from="(550,440)" to="(550,490)"/>
+    <wire from="(550,490)" to="(550,560)"/>
+    <wire from="(550,490)" to="(610,490)"/>
+    <wire from="(550,560)" to="(550,640)"/>
+    <wire from="(550,560)" to="(790,560)"/>
+    <wire from="(550,640)" to="(550,710)"/>
+    <wire from="(550,640)" to="(790,640)"/>
+    <wire from="(580,440)" to="(580,600)"/>
+    <wire from="(580,600)" to="(580,740)"/>
+    <wire from="(580,600)" to="(790,600)"/>
+    <wire from="(660,470)" to="(790,470)"/>
   </circuit>
   <circuit name="Execution">
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="Execution"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="8" loc="(235,112)" name="Text">
+    <comp lib="0" loc="(250,170)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="New_PC_ID"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(250,210)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="RegData1"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(250,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="RegData2"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(250,290)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Rd"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(250,330)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ALUOp"/>
+    </comp>
+    <comp lib="0" loc="(250,370)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="MemRead"/>
+    </comp>
+    <comp lib="0" loc="(250,410)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="MemWrite"/>
+    </comp>
+    <comp lib="0" loc="(250,450)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="MemToReg"/>
+    </comp>
+    <comp lib="0" loc="(830,170)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="New_PC_EX"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(830,210)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ALUResult"/>
+      <a name="labelloc" val="east"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(830,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="StoreData"/>
+      <a name="labelloc" val="east"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="8" loc="(235,110)" name="Text">
       <a name="text" val="Execution Stage"/>
     </comp>
+    <wire from="(250,170)" to="(830,170)"/>
   </circuit>
   <circuit name="Memory_Access">
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="Memory_Access"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="8" loc="(179,94)" name="Text">
+    <comp lib="0" loc="(250,170)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="New_PC_EX"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(830,170)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="New_PC_ME"/>
+      <a name="labelloc" val="east"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="8" loc="(175,90)" name="Text">
       <a name="text" val="Memory Access Stage"/>
     </comp>
+    <wire from="(250,170)" to="(830,170)"/>
   </circuit>
   <circuit name="Write_Back">
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="Write_Back"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="8" loc="(168,71)" name="Text">
+    <comp lib="8" loc="(165,70)" name="Text">
       <a name="text" val="Write Back Stage"/>
+    </comp>
+  </circuit>
+  <circuit name="Register_File">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Register_File"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(490,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ReadReg1"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(490,310)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="ReadReg2"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(490,340)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="WriteReg"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(490,370)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="RegWrite"/>
+    </comp>
+    <comp lib="0" loc="(710,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="RegData1"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(710,310)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="RegData2"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="8" loc="(620,235)" name="Text">
+      <a name="text" val="Register File"/>
     </comp>
   </circuit>
 </project>
