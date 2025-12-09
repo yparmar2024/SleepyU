@@ -1,4 +1,19 @@
-ADD X0, X1, X2
-SUB X1, X2, X3
-LDR X3, [X2, X1]
-STR X1, [X3, X0]
+// State: X0: 00, X1: 00, X2: 01, X3: 00
+// Load the memory at offset X3 + X3 into X0. (X0 = M[X3 + X3] = M[00 + 00] = M[00] = 60)
+LDR X0, [X3, X3]
+
+// Load the memory at offset X0 + X2 into X1. (X1 = M[X0 + X2] = M[00 + 01] = M[01] = 07)
+LDR X1, [X3, X2]
+
+// State: X0: 60, X1: 07, X2: 01, X3: 00
+// Subtract X1 from X0 and store in X2. (X2 = X0 - X1 = 60 - 07 = 53)
+SUB X2, X0, X1
+
+// Add X2 to X1 and store in X2. (X2 = X2 + X1 = 53 + 7 = 60)
+ADD X2, X2, X1
+
+// Add X2 to X1 and store in X2. (X2 = X2 + X1 = 53 + 7 = 67)
+ADD X2, X2, X1
+
+// Store X0 into offset = X3 + X3. (M[X3 + X3] = M[0 + 0] = M[0] = X0 = 67)
+STR X2, [X3, X3]

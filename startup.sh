@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Change to the directory containing assembler
+cd assembler
+
+# Run assembler to generate loadable Logisim files
+python3 assembler.py
+
+# Start up SleepyU
+echo "
+   ___ _                 _         _   _ 
+  / __| |_  ___ _ _ _  _| |_  _  _| | | |
+ | (_ | ' \/ -_) ' \ || | ' \| || | |_| |
+  \___|_||_\___|_||_\_,_|_||_|\_, |\___/ 
+                               |__/       
+
+     SleepyU Single-Cycle CPU (v1.0)
+     --------------------------------
+     [ 💤 ] Powering down eyelids
+     [ 🛌 ] Fluffing the pillows
+     [ 🌙 ] Aligning the moonbeam registers
+     [ 😴 ] Lulling the ALU to sleep
+     [ 🌌 ] Mapping constellations into instruction memory
+     [ 💤 ] Tucking data memory under the sheets
+     [ 🌠 ] Counting digital sheep...
+     
+     Dream sequence complete...
+     Entering REM mode.
+"
+
+# Open Logisim CPU file
+cd ../cpu
+open sleepyu.circ
+
+# Return to original directory
+cd ..

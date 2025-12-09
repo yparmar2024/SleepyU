@@ -31,15 +31,29 @@ with open(input_path, 'r') as file:
     # Fetch register values from the program
     opcodes = []
     for instruction in instructions:
-        bin_str = ""
+        # Strip of white spaces for proper parsing
+        instruction = instruction.strip()
+
+        # If the instruction is a comment, continue
+        if instruction[:2] == '//' or instruction[:2] == '':
+            continue
+
+        # Declare opcode to convert to hexadecimal for each instruction
+        bin_str = ''
+
+        # Replace all unnecessary characters with empty strings
         for replacement in replacements:
             instruction = instruction.replace(replacement, '')
+
+        # Replace mnemonics and numbers with their binary representations
         keywords = instruction.upper().split()
         for keyword in keywords:
             if keyword in mnemonics:
                 bin_str += num_to_bin(mnemonics[keyword])
             else:
                 bin_str += num_to_bin(int(keyword))
+
+        # Append the hexadecimal opcode to the opcodes list
         opcodes.append(bin_to_hex(bin_str))
 
 # Open the output file and write its contents
@@ -61,5 +75,5 @@ with open(memory_path, 'w') as file:
     # Write file format header
     file.write('v3.0 hex words addressed\n')
 
-    # Manually add initial memory values
-    file.write('00: 05 0A 0F 14 19 1E 23 28 2D 32 37 3C 41 46 4B 50\n')
+    # Manually add initial memory values for demo program
+    file.write('00: 3c 07\n')

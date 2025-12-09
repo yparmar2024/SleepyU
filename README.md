@@ -16,25 +16,37 @@ SleepyU is a small 8-bit CPU designed for learning and experimenting with comput
 ## Repository Structure
 
 Project_2/
-├─ CPU/
-│ └─ SleepyU.circ # Logisim CPU circuit
-├─ Assembler/
-│ └─ assembler.py # Assembler program
-├─ Programs/
-│ └─ demo_program.asm # Example assembly program
-├─ Output/
-│ └─ demo_program.hex # Assembler output for CPU memory
-└─ Docs/
-└─ SleepyU_Manual.pdf # Instruction manual
+├─ cpu/
+│ └─ sleepyu.circ               # Logisim CPU circuit
+├─ assembler/
+│ └─ assembler.py               # Assembler program
+├─ programs/
+│ └─ demo_program.txt           # Demo assembly program
+├─ images/
+│ └─ demo_instruction.hex       # Assembler output for Instruction RAM
+│ └─ demo_memory.hex            # Assembler output for Data RAM
+└─ docs/
+│ └─ sleepyu_manual.pdf         # SleepyU Manual
+└─ startup.sh                   # Start up script to run assembler, etc.
+└─ README.md                    # Setup instructions for demo
 
-## Usage
-
-1. Open `CPU/SleepyU.circ` in Logisim-Evolution.  
-2. Write assembly programs using the SleepyU instruction set (`BOOST`, `FALL`, `FETCH`, `TUCK`).  
-3. Run `Assembler/assembler.py` to convert `.asm` files into `.hex` memory images:  
-
+## Demo Usage
+### Start-up Script
+1. Run the startup command to assemble the demo program:
 ```bash
-python assembler.py Programs/demo_program.asm Output/demo_program.hex
+    bash startup.sh
 ```
+2. Load the demo_instruction.hex file into the Instruction_Fetching Stage's Instruction_RAM.
+3. Load the demo_memory.hex file into the Memory_Access Stage's Data_RAM.
+4. Press `Simulate`, then go to `Timing Diagram`.
+5. Half-tick into the first cycle via `Manual Tick Half Cycle` and set the following initial register values in the Register_File:
+    - X0: 00
+    - X1: 00
+    - X2: 01
+    - X3: 00
+6. Press `Manual Tick Full Cycle` 6 times.
+7. Now, the first value in the Memory_Access Stage's Data_RAM should be 43 in hexadecimal (or 67 in decimal).
 
-Load the .hex file into CPU memory and simulate your program in Logisim.
+## Personal Usage
+### Write your own SleepyU program.
+1. TO DO
