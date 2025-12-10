@@ -13,23 +13,6 @@ SleepyU is a small 8-bit CPU designed for learning and experimenting with comput
 - Designed in Logisim-Evolution for easy simulation and visualization  
 - Includes a simple assembler to translate assembly code into memory images  
 
-## Repository Structure
-
-Project_2/
-├─ cpu/
-│ └─ sleepyu.circ               # Logisim CPU circuit
-├─ assembler/
-│ └─ assembler.py               # Assembler program
-├─ programs/
-│ └─ demo_program.txt           # Demo assembly program
-├─ images/
-│ └─ demo_instruction.hex       # Assembler output for Instruction RAM
-│ └─ demo_memory.hex            # Assembler output for Data RAM
-└─ docs/
-│ └─ sleepyu_manual.pdf         # SleepyU Manual
-└─ startup.sh                   # Start up script to run assembler, etc.
-└─ README.md                    # Setup instructions for demo
-
 ## Demo Usage Instructions
 1. Run the startup command to assemble the demo program:
 ```bash
