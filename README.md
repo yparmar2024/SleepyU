@@ -30,8 +30,7 @@ Project_2/
 └─ startup.sh                   # Start up script to run assembler, etc.
 └─ README.md                    # Setup instructions for demo
 
-## Demo Usage
-### Start-up Script
+## Demo Usage Instructions
 1. Run the startup command to assemble the demo program:
 ```bash
     bash startup.sh
@@ -46,7 +45,3 @@ Project_2/
     - X3: 00
 6. Press `Manual Tick Full Cycle` 6 times.
 7. Now, the first value in the Memory_Access Stage's Data_RAM should be 43 in hexadecimal (or 67 in decimal).
-
-## Personal Usage
-### Write your own SleepyU program.
-1. TO DO
