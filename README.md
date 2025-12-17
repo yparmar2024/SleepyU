@@ -1,6 +1,6 @@
 # SleepyU CPU
 
-**Authors:** Yash Parmar & Nikunj Patel  
+**Authors:** [Yash Parmar](www.github.com/yparmar2024) & [Nikunj Patel](www.github.com/nikunjpatel5136)
 **Course:** Computer Architecture & Organization (CS382-B)
 **Date:** 11 December 2025  
 
